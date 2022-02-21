@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom"
+        tools:context=".MainActivity">
+
+        <ImageView
+            android:id="@+id/song_pic"
+            android:layout_width="match_parent"
+            android:layout_height="340dp"
+            android:scaleType="centerCrop"
+            />
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="song title"
+            android:textSize="60px"
+            android:textColor="#292424"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:gravity="start"
+            android:textStyle="bold"
+            android:fontFamily="monospace"
+            />
+        <TextView
+            android:id="@+id/singer_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="singer name"
+            android:textSize="40px"
+            android:textColor="#000000"
+            android:layout_margin="4dp"
+            android:padding="3dp"
+            android:background="@color/white"
+            android:gravity="start"
+
+            />
+
+
+        <TextView
+            android:id="@+id/song_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:padding="3dp"
+            android:layout_margin="5dp"
+            android:text="song time"
+            android:textColor="@color/black"
+            android:textSize="40px" />
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+
+            />
+
+        <TextView
+            android:id="@+id/song_current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:background="@color/white"
+            android:padding="3dp"
+            android:text="remaining sec"
+            android:textColor="@color/black"
+            android:textSize="40px" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/white"
+            android:padding="2dp"
+            >
+
+            <ImageView
+                android:id="@+id/add_favorite"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/heart"
+                android:layout_margin="1dp"
+                />
+
+            <ImageView
+                android:id="@+id/previous_btn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/previous"
+                android:layout_margin="1dp"
+                />
+
+            <ImageView
+                android:id="@+id/start_btn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/play"
+                android:layout_margin="1dp"
+                />
+
+            <ImageView
+                android:id="@+id/next_btn"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next"
+                android:layout_margin="1dp"
+                />
+
+            <ImageView
+                android:id="@+id/repeat_btn"
+                android:layout_width="45dp"
+                android:layout_height="37dp"
+                android:layout_margin="1dp"
+                android:src="@drawable/repeat" />
+
+        </LinearLayout>
+    </LinearLayout>
