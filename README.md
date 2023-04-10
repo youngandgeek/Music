@@ -1,6 +1,10 @@
 # Music
-Music Player android application
+Music Player android application written in Java - OOP - model class - MediaPlayer class
 
+
+android-application 
+mediaplayer Class
+API Playback-controls 
 
 
 
